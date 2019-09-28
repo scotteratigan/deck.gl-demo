@@ -20,14 +20,13 @@ update the user-date-active based of the last date and time the user logs into t
 # App Page 
 Create a simple map page when you login that shows data in an inerative way, you can signup and use mapbox for free and then display data that you fiind interetsing from any data set you like. This is an optunity to show your creativity and how you think about UI and data visralization, you can do anything you like as long as it interacts with a a map. 
 
-[I'm an inline-style link](https://www.google.com)
 Some helpful resourses: 
-[deck.gl](https://deck.gl/#/)
-[mapbox](https://www.mapbox.com/)
+ - [deck.gl](https://deck.gl/#/)
+ - [mapbox](https://www.mapbox.com/)
 
 ## Some data api's you might be interested in using: 
-[nyc health code data api](https://rapidapi.com/DrRobotmck/api/nyc-health-inspection-results)
-[climate data Record of sea surface temperature](https://catalog.data.gov/dataset/noaa-climate-data-record-cdr-of-sea-surface-temperature-whoi-version-1-0)
+- [nyc health code data api](https://rapidapi.com/DrRobotmck/api/nyc-health-inspection-results)
+- [climate data Record of sea surface temperature](https://catalog.data.gov/dataset/noaa-climate-data-record-cdr-of-sea-surface-temperature-whoi-version-1-0)
 
 # How to submit your code
 Once you complete your project with these three components and capabilities you can submit a pull request. The request should be fomated like such: 
