@@ -24,7 +24,7 @@ Some helpful resourses:
  - [deck.gl](https://deck.gl/#/)
  - [mapbox](https://www.mapbox.com/)
 
-## Some data api's you might be interested in using: 
+## Some data api's you might find interesting to use in this map app part:
 - [nyc health code data api](https://rapidapi.com/DrRobotmck/api/nyc-health-inspection-results)
 - [climate data Record of sea surface temperature](https://catalog.data.gov/dataset/noaa-climate-data-record-cdr-of-sea-surface-temperature-whoi-version-1-0)
 
