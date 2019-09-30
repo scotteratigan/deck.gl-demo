@@ -3,8 +3,5 @@
 # Node Packages:
 node_modules/
 
-# React Build Folder:
-build/
-
 # Authentication Info:
 .env
