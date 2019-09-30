@@ -4,7 +4,11 @@
   "description": "Please create a react applciation that has user login and athentiation using a postgres server use a user schema. The user db should contain at at a minimum this data.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm start",
+    "server": "nodemon server --ignore 'client'",
+    "full-install": "npm install && cd client && npm install"
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,11 @@
   },
   "homepage": "https://github.com/NicholasJohnson9149/React-Coding-Test#readme",
   "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
     "pg": "^7.12.1"
   },
   "devDependencies": {
@@ -25,6 +34,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0"
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "nodemon": "^1.19.3"
   }
 }

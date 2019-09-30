@@ -1,7 +1,9 @@
 const defaultUserObj = {
   name: "",
+  permissions: "",
   type: "",
-  active: false
+  active: "",
+  id: null
 };
 
 module.exports = {

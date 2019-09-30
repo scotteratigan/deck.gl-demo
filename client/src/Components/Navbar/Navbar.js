@@ -1,24 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.scss";
 
 export default function Navbar({ user }) {
+  const [expanded, setExpanded] = useState(false);
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          {!user.name ? (
-            <Link to="/login">Login</Link>
-          ) : (
-            <Link to="/logout">Logout</Link>
+    <>
+      <nav className={expanded ? "nav-bg-active" : ""}>
+        <div>
+          <button onClick={() => setExpanded(!expanded)}>
+            {expanded ? <span>X</span> : <span>&#8801;</span>}
+          </button>
+          {expanded && (
+            <ul>
+              <li>
+                <Link to="/" onClick={() => setExpanded(false)}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/map" onClick={() => setExpanded(false)}>
+                  Map
+                </Link>
+              </li>
+              <li>
+                {!user.name ? (
+                  <Link to="/login" onClick={() => setExpanded(false)}>
+                    Login
+                  </Link>
+                ) : (
+                  <Link to="/logout" onClick={() => setExpanded(false)}>
+                    Logout
+                  </Link>
+                )}
+              </li>
+            </ul>
           )}
-        </li>
-        <li>
-          <Link to="/users">Users</Link>
-        </li>
-      </ul>
-    </nav>
+        </div>
+      </nav>
+    </>
   );
 }

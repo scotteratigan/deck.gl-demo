@@ -8,7 +8,8 @@ CREATE TABLE users
   user_type character varying(5),
   -- permissions are 'active' or 'inactive' (consder user_is_active as boolean):
   user_permissions character varying(8),
-  user_password character varying(50),
+  -- password needs to be long because of hash function
+  user_password character varying(70),
   user_date_active character varying(50)
 );
 

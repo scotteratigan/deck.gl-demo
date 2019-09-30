@@ -1,7 +1,45 @@
 form {
-  background-color: azure;
+  border: 1px solid #09d3ac;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  border-radius: 3px;
   input,
   label {
     display: block;
+    margin: 10px;
+  }
+  div.login-type-wrapper {
+    input,
+    label {
+      display: inline;
+      margin: 5px;
+    }
+  }
+  button {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #09d3ac;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-weight: 700;
+  }
+}
+
+.login-form-wrapper {
+  min-height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login-input-wrapper {
+  margin-top: 10px;
+  display: inline-block;
+  [type="text"],
+  [type="password"] {
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px auto;
   }
 }

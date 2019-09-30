@@ -3,15 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./Pages/Login/Login";
 import Logout from "./Pages/Logout/Logout";
 import Navbar from "./Components/Navbar/Navbar";
+import Home from "./Pages/Home/Home";
+import Map from "./Pages/Map/Map";
 import { defaultUserObj } from "./utils";
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
 
 export default function App() {
   const [user, setUser] = useState(defaultUserObj);
@@ -26,11 +20,11 @@ export default function App() {
           <Route path="/logout">
             <Logout user={user} setUser={setUser} />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/map">
+            <Map user={user} />
           </Route>
           <Route path="/">
-            <Home />
+            <Home user={user} />
           </Route>
         </Switch>
       </div>

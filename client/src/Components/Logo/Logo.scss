@@ -1,0 +1,22 @@
+path.logo-letter {
+  fill: black;
+}
+
+path.period {
+  fill: #09d3ac;
+}
+
+path.period:hover {
+  fill: #09e6b9;
+}
+
+svg {
+  max-width: 50vw;
+}
+
+div.logo-container {
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
