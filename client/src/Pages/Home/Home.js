@@ -4,7 +4,6 @@ import "./Home.scss";
 
 export default function Home({ user }) {
   const loginDate = user && user.active && new Date(parseInt(user.active));
-  console.log("loginDate", loginDate);
   return (
     <div>
       <Logo />
@@ -16,6 +15,15 @@ export default function Home({ user }) {
           Login time: {loginDate.toString()}
         </p>
       )}
+      <p className="company-description">
+        Please note that while this was designed as a full-stack app with a
+        postgres user database, the deployed version is just the front-end. You
+        can{" "}
+        <a href="https://github.com/scotteratigan/deck.gl-demo">
+          view the source code
+        </a>{" "}
+        for the full app.
+      </p>
       <p className="company-description">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores,
         delectus veritatis dolorum, asperiores odit blanditiis reiciendis sequi

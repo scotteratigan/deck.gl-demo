@@ -10,7 +10,7 @@ import { defaultUserObj } from "./utils";
 export default function App() {
   const [user, setUser] = useState(defaultUserObj);
   return (
-    <Router>
+    <Router basename={"/deck.gl-demo"}>
       <div>
         <Navbar user={user} />
         <Switch>

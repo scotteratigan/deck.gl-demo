@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/deck.gl-demo/static/css/main.02600d82.chunk.css",
+    "main.js": "/deck.gl-demo/static/js/main.4df9fc25.chunk.js",
+    "main.js.map": "/deck.gl-demo/static/js/main.4df9fc25.chunk.js.map",
+    "runtime-main.js": "/deck.gl-demo/static/js/runtime-main.70a3c563.js",
+    "runtime-main.js.map": "/deck.gl-demo/static/js/runtime-main.70a3c563.js.map",
+    "static/js/2.e4975dad.chunk.js": "/deck.gl-demo/static/js/2.e4975dad.chunk.js",
+    "static/js/2.e4975dad.chunk.js.map": "/deck.gl-demo/static/js/2.e4975dad.chunk.js.map",
+    "index.html": "/deck.gl-demo/index.html",
+    "precache-manifest.7531a65843809d426a64659731702552.js": "/deck.gl-demo/precache-manifest.7531a65843809d426a64659731702552.js",
+    "service-worker.js": "/deck.gl-demo/service-worker.js",
+    "static/css/main.02600d82.chunk.css.map": "/deck.gl-demo/static/css/main.02600d82.chunk.css.map",
+    "static/media/bus.svg": "/deck.gl-demo/static/media/bus.a42ac48e.svg",
+    "static/media/drone.svg": "/deck.gl-demo/static/media/drone.14298235.svg"
+  }
+}

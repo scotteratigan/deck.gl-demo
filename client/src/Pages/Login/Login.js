@@ -60,7 +60,9 @@ export default function Login({ user, setUser }) {
         })
         .catch(err => {
           setSubmitting(false);
-          setHelpMsg("Error signing up.");
+          setHelpMsg(
+            "Error signing up. (Server is not active on deployed demo.)"
+          );
           console.error("Error:", err);
         });
     }, 300);
@@ -86,7 +88,9 @@ export default function Login({ user, setUser }) {
         })
         .catch(err => {
           setSubmitting(false);
-          setHelpMsg("Error logging in.");
+          setHelpMsg(
+            "Error logging in. (Server is not active on deployed demo.)"
+          );
           console.error("Error:", err);
         });
     }, 300);
@@ -165,9 +169,9 @@ export default function Login({ user, setUser }) {
                   value={confirmPassword}
                   onChange={e => setConfirmPassword(e.target.value)}
                 ></input>
-                <div>{helpMsg}</div>
               </>
             )}
+            <div>{helpMsg}</div>
 
             {radioInput.signUp ? (
               <button type="button" onClick={handleSignUp}>
