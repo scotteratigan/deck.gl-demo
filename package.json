@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/NicholasJohnson9149/React-Coding-Test#readme",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "concurrently": "^4.1.2",
     "dotenv": "^8.1.0",
